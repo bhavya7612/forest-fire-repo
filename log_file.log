@@ -35,19 +35,7 @@
 03-04-2024 21:46:15 INFO _internal => 127.0.0.1 - - [03/Apr/2024 21:46:15] "[36mGET /static/images/form-img.jpg HTTP/1.1[0m" 304 - 
 03-04-2024 21:46:34 ERROR app => Exception on /signup [POST] 
 Traceback (most recent call last):
-  File "F:\Bhavya\Study Material\VSCode\Minor_project\forest-fire-prediction-main\forest-fire-prediction\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\Bhavya\Study Material\VSCode\Minor_project\forest-fire-prediction-main\forest-fire-prediction\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\Bhavya\Study Material\VSCode\Minor_project\forest-fire-prediction-main\forest-fire-prediction\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\Bhavya\Study Material\VSCode\Minor_project\forest-fire-prediction-main\forest-fire-prediction\Lib\site-packages\flask\app.py", line 855, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\Bhavya\Study Material\VSCode\Minor_project\forest-fire-prediction-main\app.py", line 56, in signup
+  line 56, in signup
     session["id"] = res[0]["id"]
                     ~~~~~~^^^^^^
 TypeError: tuple indices must be integers or slices, not str
@@ -72,22 +60,7 @@ TypeError: tuple indices must be integers or slices, not str
 03-04-2024 21:55:48 INFO _internal => 127.0.0.1 - - [03/Apr/2024 21:55:48] "[36mGET /static/images/form-img.jpg HTTP/1.1[0m" 304 - 
 03-04-2024 21:56:06 ERROR app => Exception on /login [POST] 
 Traceback (most recent call last):
-  File "F:\Bhavya\Study Material\VSCode\Minor_project\forest-fire-prediction-main\forest-fire-prediction\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\Bhavya\Study Material\VSCode\Minor_project\forest-fire-prediction-main\forest-fire-prediction\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\Bhavya\Study Material\VSCode\Minor_project\forest-fire-prediction-main\forest-fire-prediction\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\Bhavya\Study Material\VSCode\Minor_project\forest-fire-prediction-main\forest-fire-prediction\Lib\site-packages\flask\app.py", line 855, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\Bhavya\Study Material\VSCode\Minor_project\forest-fire-prediction-main\app.py", line 69, in login
-    session["id"] = check[0][0]
-    ~~~~~~~^^^^^^
-  File "F:\Bhavya\Study Material\VSCode\Minor_project\forest-fire-prediction-main\forest-fire-prediction\Lib\site-packages\flask\sessions.py", line 102, in _fail
+  line 102, in _fail
     raise RuntimeError(
 RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
 03-04-2024 21:56:06 INFO _internal => 127.0.0.1 - - [03/Apr/2024 21:56:06] "[35m[1mPOST /login HTTP/1.1[0m" 500 - 
