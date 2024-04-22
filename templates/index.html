@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - Forest Fire Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/material-icon/css/material-design-iconic-font.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='vendor/jquery-ui/jquery-ui.min.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/index.css')}}">
+    <!-- <link rel="stylesheet" href="../static/css/index.css"> -->
+</head>
+<body>
+    <header>
+        <div class="home"><a href="/">Home</a></div>
+        <div class="aboutus"><a href="#about">About</a></div>
+        <div class="model"><a href="/model-input">Go to Project</a></div>
+        <div class="login"><a href="/login">Login</a></div>
+        <div class="signup"><a href="/signup">Sign Up</a></div>
+    </header>
+    <section id="about">
+        <div class="content">
+            <h2>Forest Fires - A threat to the Earth.</h2>
+            <br>
+            <p>Forest fire prediction is a critical task that aims to detect and forecast the occurrence and behavior of wildfires. Over the years, significant advancements have been made in the field of fire prediction using various techniques and technologies. However, despite these advancements, accurately predicting forest fires remains a challenging endeavor due to the complex nature of fire behavior and the multitude of factors that influence its occurrence. In recent years, researchers and scientists have turned to machine learning algorithms and models to enhance the accuracy and efficiency of forest fire prediction.</p>
+            <br>
+            <h3>About the Project</h3>
+            <br>
+            <p>This project revolves around preventing the chances of wild fires that occur due to uncontrolled and non-prescribed combustion of plants in natural settings like forests and grasslands. The wind spreads the fire rapidly, causing significant air pollution. Generally, fires that continue for longer or are highly inflammable are caused by climatic changes. There are also instances of forest fires caused by humans, lightning and extreme drought. This project aims to prevent such chances of forest fires by predicting the chances before they happen using modern technologies like machine learning, data science and Python. 
+            </p>
+        </div>
+    </section>
+</body>
+</html>
