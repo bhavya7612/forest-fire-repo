@@ -1,3 +1,3 @@
-mongodb+srv://bhavya:bhamongo123@cluster0.xhjnfgx.mongodb.net/?retryWrites=true&w=majority
+mongodb+srv://{username}:{password}@cluster0.xhjnfgx.mongodb.net/?retryWrites=true&w=majority
 
-mongoimport --uri mongodb+srv://bhavya:bhamongo123@cluster0.xhjnfgx.mongodb.net/FireDataML --collection ml_task --type CSV --file C:\Users\hp\Desktop\forest-fire-prediction-1\dataset\Algerian_forest_fires_dataset_CLEANED.csv --headerline
+mongoimport --uri mongodb+srv://{username}:{password}@cluster0.xhjnfgx.mongodb.net/FireDataML --collection ml_task --type CSV --file C:\Users\hp\Desktop\forest-fire-prediction-1\dataset\Algerian_forest_fires_dataset_CLEANED.csv --headerline
