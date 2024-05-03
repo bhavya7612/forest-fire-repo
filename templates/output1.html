@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output - Forest Fire Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/material-icon/css/material-design-iconic-font.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='vendor/jquery-ui/jquery-ui.min.css')}}">
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename= 'css/output1.css')}}"> -->
+    <link rel="stylesheet" href="../static/css/output1.css">
+</head>
+<body>
+    <header>
+        <div class="home"><a href="/">Home</a></div>
+        <div class="aboutus"><a href="/about">About</a></div>
+        <div class="model"><a href="/model-input">Go to Project</a></div>
+        <div class="login"><a href="/login">Login</a></div>
+        <div class="signup"><a href="/signup">Sign Up</a></div>
+    </header>
+    <section id="about">
+        <h1>{{prediction_text}}</h1>
+        <h4>It indicates relatively low fire
+            danger. However, you should still take certain precautions to maintain safety and prevent potential
+            wildfires. Here are some steps to consider:
+            <ol>
+                <li>Education and Outreach:
+                    <ul>
+                        <li>Educate residents, visitors, and forest workers about fire safety.</li>
+                        <li>Promote responsible behavior, such as proper campfire practices.</li>
+                        <li>Share information about fire danger levels and any restrictions.</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Emergency Preparedness:
+                    <ul>
+                        <li>Maintain an emergency plan that includes evacuation routes, communication channels, and assembly
+                            points.</li>
+                        <li>Ensure that staff and volunteers are familiar with wildfire response procedures.</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Community Engagement:
+                    <ul>
+                        <li>Engage with the local community to raise awareness about fire prevention.</li>
+                        <li>Encourage reporting of any signs of smoke or fire.</li>
+                    </ul>
+                </li>
+            </ol>
+        </h4>
+    </section>
+</body>
+</html>

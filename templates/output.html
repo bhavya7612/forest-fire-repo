@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page - Forest Fire Prediction</title>
+    <title>Output - Forest Fire Prediction</title>
 
     <link rel="stylesheet" href="{{ url_for('static',filename='fonts/material-icon/css/material-design-iconic-font.min.css')}}">
     <link rel="stylesheet" href="{{ url_for('static',filename='vendor/jquery-ui/jquery-ui.min.css')}}">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/index.css')}}">
-    <!-- <link rel="stylesheet" href="../static/css/index.css"> -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename= 'css/output.css')}}"> -->
+    <link rel="stylesheet" href="../static/css/output.css">
 </head>
 <body>
     <header>
@@ -20,14 +20,9 @@
         <div class="signup"><a href="/signup">Sign Up</a></div>
     </header>
     <section id="about">
-        <div class="content">
-            <h2>Forest Fire Prediction</h2>
-            <div class="hr"></div>
-            <div class="inside">
-                <h3>Predict forest fires with a high accuracy.</h3>
-                <a href="/model-input">Predict</a>
-            </div>
-        </div>
+        <h1>{{prediction_text}}</h1>
+        <br>
+        <h4>However, your forest is safe, but you must frequently monitor the FWI and other fire related indices.</h4>
     </section>
 </body>
 </html>

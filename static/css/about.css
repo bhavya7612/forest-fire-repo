@@ -50,41 +50,17 @@ section
     height: 80vh;
     display: flex;
     justify-content: center;
-    font-size: larger;
-    align-items: center;
     color: white;
 }
 .content
 {
-    width: fit-content;
-    height: fit-content;
-    padding: 15px;
-    /* position: relative;
-    top: 50px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 850px;
+    height: 520px;
+    padding: 25px;
+    position: relative;
+    top: 50px;
     text-align: justify;
     background-color: rgba(0,0,0,0.6);
     box-shadow: 0 15px 25px rgba(0,0,0,0.6);
     border-radius: 10px;
-}
-.hr
-{
-    margin: 10px;
-    width: 2px;
-    height: 100px;
-    background-color: white;
-}
-.inside
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: .7rem;
-}
-.inside a
-{
-    color: orange;
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output - Forest Fire Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/material-icon/css/material-design-iconic-font.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='vendor/jquery-ui/jquery-ui.min.css')}}">
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename= 'css/output29.css')}}"> -->
+    <link rel="stylesheet" href="../static/css/output29.css">
+</head>
+<body>
+    <header>
+        <div class="home"><a href="/">Home</a></div>
+        <div class="aboutus"><a href="/about">About</a></div>
+        <div class="model"><a href="/model-input">Go to Project</a></div>
+        <div class="login"><a href="/login">Login</a></div>
+        <div class="signup"><a href="/signup">Sign Up</a></div>
+    </header>
+    <section id="about">
+        <h1>{{prediction_text}}</h1>
+        <h4>It's crucial to take immediate action to prevent and manage wildfires. Here are the steps you should consider:
+            <ol>
+                <li>Implement Fire Restrictions:
+                    <ul>
+                        <li>Enforce fire bans or restrictions in the affected areas.</li>
+                        <li>Prohibit open burning, campfires, and other activities that could ignite fires.</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Increase Patrols and Surveillance:
+                    <ul>
+                        <li>Deploy additional personnel to monitor the forest.</li>
+                        <li>Conduct regular patrols to detect any signs of smoke or fire.</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Preposition Resources:
+                    <ul>
+                        <li>Position firefighting equipment strategically.</li>
+                        <li>Ensure that water tanks, hoses, and other tools are readily available.</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Assess Vulnerable Areas:
+                    <ul>
+                        <li>Identify critical zones such as residential neighborhoods, wildlife habitats, and infrastructure.</li>
+                        <li>Prioritize protection efforts based on the FWI and potential fire behavior.</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Prepare for Evacuation:
+                    <ul>
+                        <li>Develop evacuation plans for at-risk communities.</li>
+                        <li>Communicate evacuation routes and assembly points.</li>
+                    </ul>
+                </li>
+                <br>
+            </ol>
+        </h4>
+        <h5><a href="https://www.hseblog.com/fire-evacuation-plan/" target="_blank">Click here</a> to know more about Fire Evacuation Plans(FEP).</h5>
+        <h5>You can check following links for more information:
+            <br>
+            <a href="https://www.nfpa.org/en" target="_blank">National Fire Protection Association</a>
+            <br>
+            <a href="https://www.usfa.fema.gov/" target="_blank">US Fire Service</a>
+            <br>
+            <a href="https://data.giss.nasa.gov/impacts/gfwed/" target="_blank">NASA GISS</a>
+        </h5>
+    </section>
+</body>
+</html>

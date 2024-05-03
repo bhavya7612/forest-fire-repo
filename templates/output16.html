@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output - Forest Fire Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/material-icon/css/material-design-iconic-font.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='vendor/jquery-ui/jquery-ui.min.css')}}">
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename= 'css/output16.css')}}"> -->
+    <link rel="stylesheet" href="../static/css/output16.css">
+</head>
+<body>
+    <header>
+        <div class="home"><a href="/">Home</a></div>
+        <div class="aboutus"><a href="/about">About</a></div>
+        <div class="model"><a href="/model-input">Go to Project</a></div>
+        <div class="login"><a href="/login">Login</a></div>
+        <div class="signup"><a href="/signup">Sign Up</a></div>
+    </header>
+    <section id="about">
+        <h1>{{prediction_text}}</h1>
+        <h4>It indicates any fires that start have the potential to become large and uncontrollable.
+            Following things you can do in current situation:
+            <ol>
+                <li>Monitoring and Early Detection:
+                    <ul>
+                        <li>Regularly monitor weather conditions, especially temperature, relative humidity, wind speed, and precipitation.</li>
+                        <li>Use reliable weather stations or online resources to stay informed about changing conditions.</li>
+                        <li>Set up early detection systems such as fire lookout towers, cameras, or satellite imagery to identify potential fire starts promptly.</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Fuel Management:
+                    <ul>
+                        <li>Assess the vegetation in your forest area. Identify areas with high fuel loads (dry grass, dead trees, etc.).</li>
+                        <li>Implement fuel reduction strategies, such as controlled burns, mechanical thinning, or creating firebreaks.</li>
+                        <li>Maintain defensible space around structures by clearing flammable materials.</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Emergency Preparedness:
+                    <ul>
+                        <li>Develop an emergency plan that includes evacuation routes, communication channels, and assembly points.</li>
+                        <li>Train staff and volunteers on wildfire response procedures.</li>
+                        <li>Coordinate with local fire departments and emergency services.</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Public Awareness and Education:
+                    <ul>
+                        <li>Educate residents and visitors about fire safety.</li>
+                        <li>Promote responsible behavior (e.g., no campfires during high-risk periods).</li>
+                        <li>Share information about fire danger levels and restrictions.</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Fire Suppression Resources:
+                    <ul>
+                        <li>Ensure that firefighting equipment (e.g., hoses, pumps, shovels) is readily available.</li>
+                        <li>Establish mutual aid agreements with neighboring landowners or agencies.</li>
+                        <li>Consider having a dedicated firefighting crew or contracting with a private firefighting service.</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Restrictions and Bans:
+                    <ul>
+                        <li>Implement fire restrictions or bans when the FWI is high.</li>
+                        <li>Prohibit open burning, fireworks, and other activities that could ignite fires.</li>
+                    </ul>
+                </li>
+            </ol>
+        </h4>
+        <h5>You can check following links for more information:
+            <br>
+            <a href="https://www.nfpa.org/en" target="_blank">National Fire Protection Association</a>
+            <br>
+            <a href="https://www.usfa.fema.gov/" target="_blank">US Fire Service</a>
+            <br>
+            <a href="https://data.giss.nasa.gov/impacts/gfwed/" target="_blank">NASA GISS</a>
+        </h5>
+    </section>
+</body>
+</html>

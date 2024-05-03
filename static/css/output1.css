@@ -47,35 +47,23 @@ header div a:hover
 }
 section
 {
-    height: 80vh;
+    height: fit-content;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     font-size: larger;
+    text-align: justify;
+    margin: 10px;
+    padding: 20px;
     align-items: center;
     color: white;
 }
-.content
-{
-    width: fit-content;
-    height: fit-content;
-    padding: 15px;
-    /* position: relative;
-    top: 50px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    background-color: rgba(0,0,0,0.6);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
-    border-radius: 10px;
-}
-.hr
+
+h1
 {
     margin: 10px;
-    width: 2px;
-    height: 100px;
-    background-color: white;
 }
+
 .inside
 {
     display: flex;
@@ -87,4 +75,8 @@ section
 .inside a
 {
     color: orange;
+}
+h4 ol
+{
+    padding: 30px;
 }

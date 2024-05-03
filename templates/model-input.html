@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="{{ url_for('static',filename='fonts/material-icon/css/material-design-iconic-font.min.css')}}">
     <link rel="stylesheet" href="{{ url_for('static',filename='vendor/jquery-ui/jquery-ui.min.css')}}">
 
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css')}}"> -->
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css')}}">
+    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
 </head>
 <body>
     <header>
@@ -20,28 +20,33 @@
     </header>
     <div class="main">
         <div class="container">
-            <h3>Fire Prediction (Classification Model) </h3>
+            <h3>Fire Prediction </h3>
             <form action="{{ url_for('predict')}}" id="booking-form" class="booking-form" method="POST">
                 <div class="form-group">
                     <div class="form-Temperature">
                         <label for="Temperature">Temperature</label>
-                        <input type="number" id="Temperature" name="Temperature" placeholder="Temperature" />
+                        <input type="number" id="Temperature" name="Temperature" placeholder="(22-42)" step="any"/>
+                        
                     </div>
                     <div class="form-Ws">
                         <label for="Ws">WindSpeed</label>
-                        <input type="number" id="Ws" name="Ws" placeholder="Wind speed" />
+                        <input type="number" id="Ws" name="Ws" placeholder="(5-30)" step="any"/>
+                        
                     </div>
                     <div class="form-FFMC">
                         <label for="FFMC"> Fuel Moisture Code </label>
-                        <input type="number" id="FFMC" name="FFMC" placeholder="FFMC" />
+                        <input type="number" id="FFMC" name="FFMC" placeholder="(28-93)" step="any"/>
+                        
                     </div>
                     <div class="form-DMC">
                         <label for="DMC">Duff Moisture Code</label>
-                        <input type="number" id="DMC" name="DMC" placeholder="DMC" />
+                        <input type="number" id="DMC" name="DMC" placeholder="(1-66)" step="any"/>
+                        
                     </div>
                     <div class="form-ISI">
                         <label for="ISI">Initial Spread Index </label>
-                        <input type="number" id="ISI" name="ISI" placeholder="ISI" />
+                        <input type="number" id="ISI" name="ISI" placeholder="(0-18)" step="any"/>
+                        
                     </div>
                     <div class="form-submit">
                         <input type="submit" id="submit" class="submit" value="Predict" />
@@ -51,31 +56,36 @@
             </form>
         </div>
         <div class="container">
-            <h3>Fire Weather Index Prediction (Regression Model) </h3>
+            <h3>Fire Weather Index(FWI) Prediction </h3>
             <form action="{{ url_for('predictR')}}" id="Reg_form" class="booking-form" method="POST">
                 <div class="form-group">
                     <div>
                         <label for="Temperature1">Temperature</label>
-                        <input type="text" id="Temperature1" name="Temperature" placeholder="Temperature" />
+                        <input type="number" id="Temperature1" name="Temperature" placeholder="(22-42)" step="any"/>
+                        
                     </div>
                     <div>
-                        <label for="Wind_speed">Windspeed</label>
-                        <input type="text" id="Wind_speed" name="Wind_speed" placeholder="Wind speed" />
+                        <label for="Wind_speed">WindSpeed</label>
+                        <input type="number" id="Wind_speed" name="Wind_speed" placeholder="(5-30)" step="any"/>
+                        
                     </div>
                     <div>
                         <label for="FFMC1">Fuel Moisture Code</label>
-                        <input type="text" id="FFMC1" name="FFMC" placeholder="FFMC" />
+                        <input type="number" id="FFMC1" name="FFMC" placeholder="(28-93)" step="any"/>
+                        
                     </div>
                     <div>
                         <label for="DMC1">Duff Moisture Code</label>
-                        <input type="text" id="DMC1" name="DMC1" placeholder="DMC" />
+                        <input type="number" id="DMC1" name="DMC1" placeholder="(1-66)" step="any"/>
+                        
                     </div>
                     <div>
                         <label for="ISI1">Initial Spread Index</label>
-                        <input type="text" id="ISI1" name="ISI1" placeholder="ISI" />
+                        <input type="number" id="ISI1" name="ISI1" placeholder="(0-18)" step="any"/>
+                        
                     </div>
                     <div class="form-submit">
-                        <input type="submit" id="submitR" class="submit" value="Predict" />
+                        <input type="submit" id="submitR" class="submit" value="Predict" step="any"/>
                     </div>
                 </div>
                           {{prediction_text2}}

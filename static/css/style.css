@@ -240,15 +240,17 @@ body {
   -ms-border-radius: 10px; }
 
 .booking-form {
-  padding: 35px 70px 51px 70px; }
+  padding: 0 70px 40px 70px; 
+  margin: 40px 0 40px 0;
+}
 
 header {
   display: flex;
-  height: 10px;
+  height: 14px;
+  padding: 18px;
   justify-content: space-between;
-  padding: 10px;
+  align-items: center;
   box-shadow: 0px 0px 50px black;
-  padding: 50px 57px; 
 }
 header a
 {
@@ -284,13 +286,17 @@ input {
   font-family: Poppins;
   position: relative;
   z-index: 9; }
-  input::-webkit-input-placeholder {
+
+input::-webkit-input-placeholder {
     color: #999; }
-  input::-moz-placeholder {
+
+input::-moz-placeholder {
     color: #999; }
-  input:-ms-input-placeholder {
+
+input:-ms-input-placeholder {
     color: #999; }
-  input:-moz-placeholder {
+
+input:-moz-placeholder {
     color: #999; }
 
 .submit {
@@ -299,8 +305,10 @@ input {
   font-size: 14px;
   margin-top: 23px;
   padding: 15px 20px;
-  cursor: pointer; }
-  .submit:hover {
+  cursor: pointer; 
+}
+
+.submit:hover {
     background-color: #ce9906; }
 
 label {
