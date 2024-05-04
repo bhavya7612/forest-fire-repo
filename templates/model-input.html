@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="{{ url_for('static',filename='fonts/material-icon/css/material-design-iconic-font.min.css')}}">
     <link rel="stylesheet" href="{{ url_for('static',filename='vendor/jquery-ui/jquery-ui.min.css')}}">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css')}}">
-    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css')}}"> -->
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
     <header>
         <div class="home"><a href="/">Home</a></div>
-        <div style="font-size: x-large;">Forest Fire Prediction</div>
-        <div class="logout"><a href="/logout">Logout</a></div>
+        <h4>Welcome, {{user}}</h4>
+        <a href="/logout">Logout</a>
     </header>
     <div class="main">
         <div class="container">

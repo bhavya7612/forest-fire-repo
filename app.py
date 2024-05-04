@@ -59,9 +59,9 @@ def signup():
             return render_template('signup.html',message="User already exists")
         else:
             res = obj_model.user_signup(user_name,Email,Password)
-            session["id"] = res[0][1]
-            print("session --> ",session)
-            return redirect("/model-input")
+            if 'id' in session:
+                session.pop('id')
+            return redirect("/login")
     else:
         return render_template("signup.html")
 
@@ -93,7 +93,7 @@ def logout():
 @app.route('/model-input')
 def modelinput():
     if 'id' in session:
-        return render_template('model-input.html')
+        return render_template('model-input.html',user=session['id'])
     else:
         return render_template('nologin.html')
 

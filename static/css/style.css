@@ -264,6 +264,11 @@ header a:hover
 {
   color: whitesmoke;
 }
+header h4
+{
+  color: black;
+  font-size: larger;
+}
 input {
   border: none;
   background: #fff;
